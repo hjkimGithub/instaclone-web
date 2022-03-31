@@ -1,6 +1,7 @@
 # InstaClone
 
-- [] Router
-- [] Authentication
-- [] Architect
+- [x] Router
+- [x] Authentication
+- [x] Architect
 - [] Style: ex) darkmode
+- [] Log In
