@@ -3,5 +3,5 @@
 - [x] Router
 - [x] Authentication
 - [x] Architect
-- [] Style: ex) darkmode
+- [x] Style: ex) darkmode
 - [] Log In
