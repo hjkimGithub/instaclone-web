@@ -1,3 +1,10 @@
+import {
+    faFacebook,
+    faFacebookF,
+    faFacebookSquare,
+    faInstagram,
+  } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 const Title = styled.h1`
@@ -100,22 +107,29 @@ const FacebookLogin = styled.div`
 function Login() {
     return (
         <Container>
-            <Wrapper>
+             <Wrapper>
+                <TopBox>
                 <div>
-                    <h1>Instagram</h1>
-                    <form>
-                        <input type="text" placeholder="Username" />
-                        <input type="password" placeholder="Password" />
-                        <input type="submit" placeholder="Log in" />
-                    </form>
+                    <FontAwesomeIcon icon={faInstagram} size="3x" />
+                </div>
+                <form>
+                    <input type="text" placeholder="Username" />
+                    <input type="password" placeholder="Password" />
+                    <input type="submit" value="Log in" />
+                </form>
+                <Separator>
+                    <div></div>
                     <span>Or</span>
-                    <FacebookLogin>
-                        <span>Log in with Facebook</span>
-                    </FacebookLogin>
-                </div>
-                <div>
-                    <span>Don't have an account?</span>
-                </div>
+                    <div></div>
+                </Separator>
+                <FacebookLogin>
+                    <FontAwesomeIcon icon={faFacebookSquare} />
+                    <span>Log in with Facebook</span>
+                </FacebookLogin>
+                </TopBox>
+                <BottomBox>
+                    <span>Don't have an account?</span> <a href="/">Sign up</a>
+                </BottomBox>
             </Wrapper>
         </Container>
     );
