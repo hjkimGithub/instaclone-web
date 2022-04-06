@@ -4,4 +4,7 @@
 - [x] Authentication
 - [x] Architect
 - [x] Style: ex) darkmode
-- [] Log In
+- [] Log In/ Sign Up
+- [] Feed
+- [] Profile
+- [] See Hashtag

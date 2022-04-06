@@ -13,7 +13,7 @@ function App() {
   const darkMode = useReactiveVar(darkModeVar);
   return (
     <div>
-      <ThemeProvider theme={!darkMode ? darkTheme : lightTheme}> 
+      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}> 
       <GlobalStyles />
       <Router>
         <Routes>
